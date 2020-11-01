@@ -1,3 +1,4 @@
+/* Globale */
 * , *::before , *::after{
     padding: 0;
     margin: 0;
@@ -10,4 +11,31 @@ body{
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
+}
+/* Header */
+.conatiner{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (min-width : 768px){
+    .conatiner{
+        max-width: 760px;
+    }
+}
+@media  screen and (min-width :970px){
+    .conatiner{
+        max-width: 962px;
+    }
+}
+@media  screen and (min-width :1200px){
+    .conatiner{
+        max-width: 1192px;
+    }
+}
+#header{
+    background-color: rgb(131, 131, 131);
+    
 }
