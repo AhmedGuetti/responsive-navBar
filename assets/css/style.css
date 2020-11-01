@@ -39,15 +39,37 @@ body{
 #header{
     background-color: rgb(131, 131, 131);
     position: relative;
+    height: 10vh;
+    display: flex;
+    align-items: center;
 }
 .c-header {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
 }
 .logoLink{
     color: white;
     font-size: 1.5rem;
+}
+.navBar{
+    background-color: rgb(131, 131, 131);
+    position: fixed;
+    top: 10vh;
+    right: 0;
+    height: 100vh;
+    z-index: 1000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50vw;
+}
+.navLink{
+
+    font-size: 1.2rem;
+    color: white;
 }
 
 
@@ -80,7 +102,7 @@ body{
     .menu.is-active .menuInner,
     .menu.is-active .menuInner::before,
     .menu.is-active .menuInner::after {
-      background-color: #000; }
+      background-color: #fff; }
       .menu.is-active .menuInner::before {
         transform: translate3d(8px, 0, 0) rotate(45deg) scale(0.7, 1); }
       
@@ -99,7 +121,7 @@ body{
     .menuInner, .menuInner::before, .menuInner::after {
       width: 40px;
       height: 4px;
-      background-color: #000;
+      background-color: #fff;
       border-radius: 4px;
       position: absolute;
       transition-property: transform;
