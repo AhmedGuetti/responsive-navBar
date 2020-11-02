@@ -50,8 +50,8 @@ body{
 }
 @media screen and (min-width : 768px){
   .logo{
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex: 0 0 380px;
+    max-width: 380px;
   }
 }
 @media  screen and (min-width :970px){
@@ -93,14 +93,15 @@ body{
      right: 0;
      flex-direction: row;
     justify-content: space-around;
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex: 0 0 380px;
+    max-width: 380px;
     transition: none;
+    margin-left: -15px;
   }
 }
 @media  screen and (min-width :970px){
-  .container{
-      max-width: 962px;
+  .navBar{
+    
   }
 }
 .active{
