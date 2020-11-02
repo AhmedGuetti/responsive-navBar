@@ -48,6 +48,10 @@ body{
     align-items: baseline;
     justify-content: space-between;
 }
+.logo{
+  flex: 0 0 50%;
+  max-width: 50%;
+}
 .logoLink{
     color: white;
     font-size: 1.5rem;
@@ -66,6 +70,19 @@ body{
     justify-content: space-evenly;
     width: 50vw;
     transition: all 0.5s ease-in-out;
+}
+@media screen and (min-width : 768px){
+  .navBar{
+     position: relative;
+     height: auto;
+     width: auto;
+     top: 0;
+     right: 0;
+     flex-direction: row;
+    justify-content: space-around;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
 }
 .active{
     right:0vw;
@@ -138,3 +155,8 @@ body{
       top: -10px; }
     .menuInner::after {
       bottom: -10px; }
+      @media screen and (min-width : 768px){
+        .menu{
+           display: none;
+        }
+      }
