@@ -39,8 +39,9 @@ body{
 #header{
     background-color: rgb(131, 131, 131);
     position: relative;
-    height: 10vh;
+   height: 5rem;
     display: flex;
+    z-index: 1500;
     align-items: center;
 }
 .c-header {
@@ -67,10 +68,10 @@ body{
 .navBar{
     background-color: rgb(131, 131, 131);
     position: fixed;
-    top: 10vh;
+    top: 5rem;
     right:-100vw;
     height: 100vh;
-    z-index: 1000;
+    z-index: 100;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -97,11 +98,6 @@ body{
     max-width: 380px;
     transition: none;
     margin-left: -15px;
-  }
-}
-@media  screen and (min-width :970px){
-  .navBar{
-    
   }
 }
 .active{
